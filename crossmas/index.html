@@ -1,74 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crossmas</title>
-  <link rel="stylesheet" href="./crossmas/style.css">
-  <style>
-    body {
-      background: url('./images/greenlights.gif') #410B08;
-      color: #F8F1C7;
-      font-family: Verdana, sans-serif;
-      text-align: center;
-    }
-    table {
-      width: 1024px;
-      margin-top: 0;
-      margin-bottom: 2em;
-      margin-left: auto;
-      margin-right: auto;
-      background: url('./images/darkstrip.jpg');
-      border: 1px solid #A50303;
-      border-spacing: 10px;
-    }
-    td {
-      padding: 10px;
-      border: 1px solid #410B08;
-      background: url('./images/tile.jpg');
-    }
-    iframe {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      border: none;
-      font-family: 'Times New Roman', Times, serif;
-    }
-    img {
-      display: inline-block;
-      margin: 5px;
-    }
-  </style>
-</head>
-<body>
-  
-  <img src="./images/hollyjolly.gif" alt="Holly Jolly">
-        
-  <table>
-    <tr>
-      <td>
-        <div>
-          <img src="./images/bar.gif" width="71" height="20" alt="">
-          <img src="./images/bar.gif" width="71" height="20" alt="">
-          <img src="./images/bar.gif" width="71" height="20" alt="">
-          <img src="./images/bar.gif" width="71" height="20" alt="">
-        </div>
-        <div>
-          <iframe
-          src="https://crosshare.org/embed/sW7iBaafH0vqc7UzqvMf/M4zw5xFnxyXomlMU8GhGRwvaJHi2"
-          allowfullscreen
-          allowtransparency
-          allow="clipboard-write"
-        ></iframe>
-        </div>
-        <div>
-          <img src="./images/bar.gif" width="71" height="20" alt="">
-          <img src="./images/bar.gif" width="71" height="20" alt="">
-          <img src="./images/bar.gif" width="71" height="20" alt="">
-          <img src="./images/bar.gif" width="71" height="20" alt="">
-        </div>
-        <img src="./images/twinstars.jpg" width="42" height="39" alt="Twin Stars">
-      </td>
-    </tr>
-  </table>
-</body>
+  <head>
+    <!-- 
+  ,           _   _                   _   _        
+ /|   |      | | | |          o      | | | |       
+  |___|  __  | | | |             __  | | | |       
+  |   |\/  \_|/  |/  |   |    | /  \_|/  |/  |   | 
+  |   |/\__/ |__/|__/ \_/|/   |/\__/ |__/|__/ \_/|/
+                        /|   /|                 /| 
+         ___            \|   \|                 \| 
+        / (_)                                         |  
+       |      ,_    __   ,   ,           __   ,_    __|  
+       |     /  |  /  \_/ \_/ \_|  |  |_/  \_/  |  /  |  
+        \___/   |_/\__/  \/  \/  \/ \/  \__/    |_/\_/|_/
+  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Have a Holly Jolly Crossword!</title>
+    <style>
+      body {
+        background: url("./images/greenlights.gif") #410b08;
+        color: #f8f1c7;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+      }
+      table {
+        width: 1024px;
+        margin-top: 0;
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        background: url("./images/darkstrip.jpg");
+        border: 1px solid #a50303;
+        border-spacing: 10px;
+      }
+      td {
+        padding: 10px;
+        border: 1px solid #410b08;
+        background: url("./images/tile.jpg");
+      }
+      iframe {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        border: none;
+        font-family: "Times New Roman", Times, serif;
+      }
+      img {
+        display: inline-block;
+        margin: 5px;
+      }
+      #mobilewarning {
+        margin: 1em;
+        padding: 1em;
+        text-align: center;
+        background: url('./images/tile.jpg');
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth < 768) {
+          document.body.innerHTML = `
+            <div id=mobilewarning>
+              <h1>Please visit this page on a computer. You will not regret it!</h1>
+            </div>
+          `;
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <img src="./images/hollyjolly.gif" alt="Holly Jolly" />
+
+    <table>
+      <tr>
+        <td>
+          <div>
+            <img src="./images/bar.gif" width="71" height="20" alt="" />
+            <img src="./images/bar.gif" width="71" height="20" alt="" />
+            <img src="./images/bar.gif" width="71" height="20" alt="" />
+            <img src="./images/bar.gif" width="71" height="20" alt="" />
+          </div>
+          <div>
+            <iframe
+              src="https://crosshare.org/embed/sW7iBaafH0vqc7UzqvMf/M4zw5xFnxyXomlMU8GhGRwvaJHi2"
+              allowfullscreen
+              allowtransparency
+              allow="clipboard-write"
+            ></iframe>
+          </div>
+          <div>
+            <img src="./images/bar.gif" width="71" height="20" alt="" />
+            <img src="./images/bar.gif" width="71" height="20" alt="" />
+            <img src="./images/bar.gif" width="71" height="20" alt="" />
+            <img src="./images/bar.gif" width="71" height="20" alt="" />
+          </div>
+          <img
+            src="./images/twinstars.jpg"
+            width="42"
+            height="39"
+            alt="Twin Stars"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
